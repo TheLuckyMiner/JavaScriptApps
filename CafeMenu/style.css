@@ -1,0 +1,60 @@
+body{
+    font-family: Arial;
+    font-size: 18px;
+    background: lightblue;
+}
+
+.container{
+    width: 95%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.menu__buttons button{
+    margin: 15px 0;
+}
+
+.menu__images{
+    width: 51%;
+    position:relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 332px;
+}
+
+.menu-img{
+    position: absolute;
+    max-width: 332px;
+}
+
+#main{
+    z-index: 0;
+}
+
+#drinks{
+    z-index: 0;
+}
+
+#takeaway{
+    z-index: 0;
+}
+
+@media(max-width:770px){
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu__images{
+        margin-top: 0;
+    }
+}
