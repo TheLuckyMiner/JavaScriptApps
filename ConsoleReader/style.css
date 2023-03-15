@@ -1,0 +1,19 @@
+body{
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    margin-top: 200px;
+    border:1px solid #282b41;
+    width: 800px;
+}
+
