@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body{
+    margin: 0;
+    background: #87c7ff;
+    font-family: Inter, sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header{
+    background-color:azure;
+    text-align: center;
+    border-bottom: 1px solid darkblue;
+}
+
+.title{
+    margin: 0;
+    padding: 20px 0;
+}
+
+.main-text{
+    font-size: 25px;
+}
