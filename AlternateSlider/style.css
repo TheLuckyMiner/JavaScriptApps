@@ -56,3 +56,19 @@ body{
     100%{opacity: 0}
 }
 
+@media(max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        
+    }
+    .inner{
+        max-height: 320px;
+    }
+    .info{
+        margin-top: 5px;
+    }
+    p{
+        margin-top: 0;
+    }
+}
+
