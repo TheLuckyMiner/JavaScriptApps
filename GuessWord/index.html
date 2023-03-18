@@ -15,9 +15,29 @@
     </header>
     <main class="main">
         <div class="container">
-            <p class="main-text">Guess word</p>
+            <div class="main-block">
+                <p class="main-text">Guess word: </p>
+                <p class="guessWord">HERE</p>
+            </div> 
+            <div class="main-block">
+                <p class="main-text">Remain letters to guess:</p>
+                <p class="remainLetters"> </p>  
+            </div>
+            <div class="main__warning">
+                <img src="sign.png" id = "warning-img" alt="!" class="warning-img">
+                <p class="warning" id="warning">Please, enter 1 symbol!</p>
+            </div>
+            <div class="main__form">
+                <input type="text" id="input_form" value="" class="input-form"  />
+                <input type="submit" onclick="getValue()" class="input-btn" />
+            </div>
+            <div class="main-image">
+                <img src="images/error0.png" id="image" class="image">
+            </div> 
         </div>
     </main>
-    <script src="index.js"></script>
+    <!--<script src="index.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <script src="img-animation.js"></script>
 </body>
 </html>
