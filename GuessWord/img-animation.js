@@ -18,8 +18,10 @@ const imgLinks = [
 
 function getValue(){
     let text = document.getElementById("input_form").value;
+    text = text.toLowerCase();
     text = text[0];
     doesntFound = 1;
+    
 
     for(let i =0; i < word.length; i++){
         if(word[i] === text){
@@ -27,6 +29,8 @@ function getValue(){
             doesntFound = 0;
         }
     }
+
+
     if(doesntFound){
         errorAmount++; 
         console.log(errorAmount);
