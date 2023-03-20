@@ -1,10 +1,12 @@
-let time = 100;
+let leftOffSet = 0;
+let moveHeading = function(){
+    $('#list').offset({left: leftOffSet});
 
-for (let i = 0; i < 5; i++){
-    $('p').fadeIn(time);
-    $('p').fadeOut(time);
-    time += 100;
+    leftOfSet++;
 
-}
+    if(leftOffSet > 200) {
+        leftOffSet = 0;
+    }
+};
 
-$('p').fadeIn(time);
+setInterval(moveHeading, 3000);
