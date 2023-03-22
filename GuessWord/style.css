@@ -77,6 +77,17 @@ header{
     background-color: azure;
 }
 
+.main__reload{
+    margin-top: 20px;
+}
+
+.reload-btn{
+    border-radius: 15px;
+    background-color: azure;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
 .main-image{
     margin-top: 30px;
     margin-left: 20px;
