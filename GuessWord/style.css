@@ -40,6 +40,10 @@ header{
     font-size: 25px;
 }
 
+.guessWord{
+    letter-spacing: 2px;
+}
+
 .main__warning{
     margin-top: 30px;
     margin-bottom: 30px;

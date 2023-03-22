@@ -16,16 +16,16 @@
     <main class="main">
         <div class="container">
             <div class="main-block">
-                <p class="main-text">Guess word: </p>
-                <p class="guessWord">HERE</p>
+                <p class="main-text">Загаданное слово: </p>
+                <p class="guessWord" id="guessWord"> </p>
             </div> 
             <div class="main-block">
-                <p class="main-text">Remain letters to guess:</p>
-                <p class="remainLetters"> </p>  
+                <p class="main-text">Количество ошибок:</p>
+                <p class="remainLetters" id="errors">0</p>  
             </div>
             <div class="main__warning">
                 <img src="sign.png" id = "warning-img" alt="!" class="warning-img">
-                <p class="warning" id="warning">Please, enter 1 symbol!</p>
+                <p class="warning" id="warning">Пожалуйста, введите 1 букву!</p>
             </div>
             <div class="main__form">
                 <input type="text" id="input_form" value="" class="input-form"  />
@@ -34,16 +34,10 @@
             <div class="main-image">
                 <img src="images/error0.png" id="image" class="image">
 
-            </div>
-            
-            
+            </div>           
         </div>
     </main>
-    <!--<script src="index.js"></script> -->
-    <!-- <script src="script.js"></script> -->
-    <script src="jquery.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="img-animation.js"></script>
-    
 </body>
 </html>
