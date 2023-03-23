@@ -23,6 +23,7 @@ let moveHeading = function() {
 let finish = setInterval(moveHeading, gameSpeed);
 
 /*
+
 let moveHeading = function() {
     $('p').offset ({left: leftCoord, top: topCoord});
 
