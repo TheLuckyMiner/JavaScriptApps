@@ -8,7 +8,23 @@
     <link rel='stylesheet' href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">Сars on the road</h1>
+    </header>
+    <div class="road">
+        <img src="map.jpg" alt="" class="map">
+    </div>
+    <div class="buttons">
+        <div class="buttons-top">
+            <button class="btn" onclick="tesla.moveUp()">↑</button>
+        </div>
+        <div class="buttons-bottom">
+            <button class="btn" onclick="tesla.moveLeft()">←</button>
+            <button class="btn" onclick="tesla.moveDown()">↓</button>
+            <button class="btn" onclick="tesla.moveRight()">→</button>
+        </div>
+
+    </div>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="script.js"></script>
 </body>

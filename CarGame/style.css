@@ -5,5 +5,47 @@
 }
 
 body{
-    background: #0049f3;
+    background: #85be4b;
+}
+
+.header{
+    padding: 20px 0;
+    margin-bottom: 40px;
+    background: #45b8ab;
+}
+
+.title{
+    color:whitesmoke;
+    font-size: 35px;
+    text-align: center;
+}
+
+.road{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    height: 550px;
+    
+}
+
+.buttons{
+
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons-top,
+.buttons-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 10px;
 }

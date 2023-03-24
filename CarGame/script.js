@@ -1,11 +1,11 @@
 let Car = function (x,y){
     this.x = x;
     this.y = y;
-    this.speed = 5;
+    this.speed = 10;
 };
 
 Car.prototype.draw = function(){
-    let carHTML = "<img style='width: 300px' src='car.png'>";
+    let carHTML = "<img style='width: 95px' src='Car2.png'>";
 
     this.carElement = $(carHTML);
 
@@ -14,7 +14,7 @@ Car.prototype.draw = function(){
         left: this.x,
         top: this.y
     });
-    $('body').append(this.carElement);
+    $('.road').append(this.carElement);
    
 };
 
@@ -23,7 +23,9 @@ Car.prototype.moveRight = function() {
 
     this.carElement.css({
         left: this.x,
-        top: this.y
+        top: this.y,
+        transform: 'rotate(0)'
+
     });
 };
 
@@ -31,7 +33,8 @@ Car.prototype.moveLeft = function () {
     this.x -= this.speed;
     this.carElement.css({
     left: this.x,
-    top: this.y
+    top: this.y,
+    transform: 'rotate(180deg)'
     });
 };
 
@@ -39,7 +42,8 @@ Car.prototype.moveUp = function () {
     this.y -= this.speed;
     this.carElement.css({
     left: this.x,
-    top: this.y
+    top: this.y,
+    transform: 'rotate(270deg)'
     });
 };
 
@@ -47,13 +51,28 @@ Car.prototype.moveDown = function () {
     this.y += this.speed;
     this.carElement.css({
     left: this.x,
-    top: this.y
+    top: this.y,
+    transform: 'rotate(90deg)'
     });
 };
 
-let tesla = new Car(20,20);
-let nissan = new Car(100,200);
+let tesla = new Car(300,370);
 
 tesla.draw();
-nissan.draw();
 
+document.addEventListener('keydown', function(event){
+    switch(event.key){
+        case 'ArrowLeft':
+            tesla.moveLeft();
+            break;
+        case 'ArrowUp':
+            tesla.moveUp();
+            break;
+        case 'ArrowRight':
+            tesla.moveRight();
+            break;
+        case 'ArrowDown':
+            tesla.moveDown();
+            break;
+    }
+});
