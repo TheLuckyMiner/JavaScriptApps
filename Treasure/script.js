@@ -10,7 +10,9 @@ let getDistance = function (event, target){
 };
 
 let getDistanceHint = function (distance){
-    if (distance < 20) {
+    if (distance < 15){
+        return "Победа!";
+    } else if (distance < 20) {
         return "Обожжешься!";
     } else if (distance < 40){
         return "Очень горячо!";
@@ -47,3 +49,4 @@ $('.map').click(function (event){
         alert("Клад найден! Сделано кликов: " + clicks);
     }
 });
+

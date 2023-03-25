@@ -76,3 +76,12 @@ document.addEventListener('keydown', function(event){
             break;
     }
 });
+
+
+let finish = setInterval(function(){
+    tesla.moveRight();
+    if (tesla.x > 950){
+        clearInterval(finish);
+    }
+},100);
+
