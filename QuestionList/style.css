@@ -57,6 +57,10 @@ body{
     display: block;
 }
 
+.hint__show-arrow{
+    rotate: 180deg;
+}
+
 .list__inner-item:hover{
     cursor: pointer;
 }
